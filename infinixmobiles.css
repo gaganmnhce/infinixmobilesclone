@@ -1,0 +1,303 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eae2e2;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ 
+header {
+    background-color: #222;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #4CAF50;
+}
+ 
+.hero {
+    background: url(' https://balastech.com/wp-content/uploads/2022/12/Infinix-ZERO-20-is-now-official-in-India-1024x538.jpg') no-repeat  scroll;
+    background-size: cover;   
+    color: rgb(189, 19, 19);
+    padding: 100px 20px;
+    text-align: center;
+    height: 100vh;   
+    
+  
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+.cta-btn {
+    background-color: #4CAF50;
+    color: white; 
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #333;
+}
+ 
+.features {
+    background-color: rgb(227, 227, 235);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.features .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between feature items */
+}
+
+.feature-item {
+    flex-basis: 30%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #a09bb258;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-item img {
+    width: 100%; /* Ensures the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 1000px; /* Adjust this value as needed */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    margin-bottom: 20px; /* Adds space between the image and the text */
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1.1rem;
+}
+
+ 
+.pricing {
+    background-color: #9dc29b;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.pricing .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: rgb(233, 217, 217);
+    padding: 30px;
+    width: 30%;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center; /* Center text and images */
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-image,.features-image {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 1000px; /* Adjust this value to fit the image size properly */
+    object-fit: cover; /* Ensures the image covers the space without stretching */
+    margin-bottom: 20px; /* Space between the image and text */
+}
+
+
+.pricing-card h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.pricing-card p {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+    font-size: 1rem;
+}
+
+.pricing-card .cta-btn {
+    background-color: #4CAF50;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.pricing-card .cta-btn:hover {
+    background-color: #333;
+}
+
+
+footer {
+    background-color: #222;
+    color: rgb(129, 99, 193);
+    padding: 40px 20px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.footer-links ul {
+    list-style: none; 
+    margin: 5px; 
+    
+}
+
+
+.footer-links ul li a { 
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s; 
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+     
+}
+
+.footer-links ul li a:hover {
+    color: #4CAF50;  
+}
+
+
+.footer-contact{
+    display: flex;  
+    gap: 18px;  
+    font-size: 23px;
+    color: rgba(141, 114, 65, 0.645);
+
+}
+
+ 
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+    margin-bottom: 20px;
+}
+
+.footer-social .social-icon {
+    color: white;
+    font-size: 2rem; /* Larger icon size */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.footer-social .social-icon:hover {
+    color: #4CAF50; /* Green color on hover */
+    transform: scale(1.1); /* Slightly increase the icon size */
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
